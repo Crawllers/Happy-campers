@@ -20,8 +20,8 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      {this.state.logedin ? <Hello /> : <Login />}
-    
+      {/* {this.state.logedin ? <Hello /> : <Login />} */}
+    <Signup />
     </div>
   );
 }
