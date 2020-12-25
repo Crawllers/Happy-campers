@@ -5,25 +5,12 @@ app.use(express.static('public'))
 const mongoose = require('mongoose')
 app.use(express.json()); 
 app.use(express.urlencoded({extended:true}));
-  
+const User = require('./user/schema.js');
+const Events = require('./user/schemaEvent.js');
+const Posts = require('./user/schemaPost.js');
 mongoose.connect('mongodb://localhost:27017/happy-camper', { useNewUrlParser: true,useUnifiedTopology: true });///to connect mongoose
 
-var userSchema = new mongoose.Schema({///the type of elements
-    username: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    password: {
-        type: String,
-        required: true
-    }
-})
-var User = mongoose.model('user', userSchema)
+
 app.post('/sign',(req,res)=>{ 
     console.log(req.body.username,req.body.email,req.body.password)
 var username=req.body.username;
