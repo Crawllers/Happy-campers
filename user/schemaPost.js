@@ -4,9 +4,9 @@ var postSchema = new mongoose.Schema({///the type of elements
         type: String,
         required: true
     },
-    user_id: {
+    useremail: {
         type: String,
-        required: true,
+        required: true
     },
     imgUrl: {
         type: String,

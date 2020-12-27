@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+/* navigation bar */
+.navigation{
+  background-color: #7AAAE1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_fix{
+  position: fixed;
+  width:100%;
+  top:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation div h1{
+  margin-right: 3.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navigation div h1:hover{
+  color: #000;
+}
+
+/* landing component */
+
+.landing{
+  width: 100%;
+  height: 90vh;
+  background: url("https://i.imgur.com/8I0AD8C.jpg") no-repeat 70%;
+  margin: auto 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_joion{
+  width: 18rem;
+  height: 3.4rem;
+  background-color: transparent;
+  border: #fff 4px solid;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-bottom: 12rem;
+  cursor: pointer;
+}
+
+.btn_joion:hover{
+  background-color: #fff;
+  border: #000 4px solid;
+  color: #000;
+  font-weight: 700;
+}
+
+/* logo component */
+.logo{
+  width: 260%;
+  height: 7vh;
+  margin-left: 2.4rem;
+}
+
+.logo img{
+  max-width: 220px;
+  width: 16%;
+  height: auto;
+}
+
+/* feeds main div component posts and event */
+
+.feedscontainer{
+  width: 55%;
+  background-color: #F3F2F2;
+  margin: auto;
+  margin-top:12rem;
+  padding: 1.8rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn_feeds{
+  width: 8rem;
+  height: 2.4rem;
+  background-color: transparent;
+  border:  #7AAAE1 4px solid;
+  color:  #7AAAE1;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 0 2rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected{
+  background-color:  #7AAAE1;
+  border: #fff 4px solid;
+  color: #fff;
+  font-weight: 700;
+}
+.postcnt{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+
+.postcnt img{
+  width: 70%;
+  height: auto;
+}
+
+.postcnt p{
+  width: 40%;
+  text-align: justify;
+  margin: 0.8rem;
+}
+
+.postcnt h1{
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.postcnt h2{
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.postcnt h3{
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.postcntinto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-justify: justify;
+  margin: 1rem;
+}
+
+.postcntud{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* post  */
+
+.postcnt{
+  width: 70%;
+  margin: auto;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F2F2;
+}
+
+/*My posts BTN*/
+
+.mypost{
+  color: #7AAAE1;
+  cursor: pointer;
+}
+
+.mypost:hover{
+  color: #000;
+}
+
+/* router Link */
+
+.nodec{
+  text-decoration: none;
+}
+
+.hide{
+  display: none;
+}
+
+.joinbtn{
+  width: 6rem;
+  height: 2.4rem;
+  margin: 0 2.6rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.joinbtn:hover {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.joinarea{
+  display: flex;
+  justify-content:center;
+  align-items:center
 }
