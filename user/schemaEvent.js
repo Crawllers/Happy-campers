@@ -4,21 +4,23 @@ var eventSchema = new mongoose.Schema({///the type of elements
         type: String,
         required: true
     },
-    user_id: {
-        type: String,
-        required: true,
-    },
-   location: {
+    useremail: {
         type: String,
         required: true
     },
+    title: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+    },
     telephone: {
-        type: Number,
+        type: String,
         required: true
     },
     date: {
-        type: Date,
-        required: true
+        type: String,
     },
     imgUrl: {
         type: String,
@@ -27,6 +29,10 @@ var eventSchema = new mongoose.Schema({///the type of elements
     text: {
         type: String,
         required: true
+    },
+    joinEvent:{
+        type: String,
+        default: ''
     }
 })
 var Events = mongoose.model('event', eventSchema)

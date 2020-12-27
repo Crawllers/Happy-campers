@@ -12,6 +12,10 @@ var userSchema = new mongoose.Schema({///the type of elements
     password: {
         type: String,
         required: true
+    },
+    isadmin:{
+        type: Boolean,
+        required: false
     }
 })
 var User = mongoose.model('user', userSchema)
