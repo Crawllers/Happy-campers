@@ -30,18 +30,21 @@ export default class Myevents extends Component {
     render() {
         console.log('posts from PostsFeed : ', this.props.events)
         const {events} = this.props
-         let filterred;
+        let filterred;
+        let buffer;
         if(events){
             filterred = events.filter(event => event.useremail === this.props.email)
             console.log(filterred);
+            buffer = filterred.reverse()
         }
+        
         return (
             <div>
-                {filterred ? filterred.map((event, index) =>(
+                {buffer ? buffer.map((event, index) =>(
                     <div className="postcnt" key={index}>
-                        <Link className="nodec" to={`/post/${event._id}`}>
+                        
                         <h1>{event.title}</h1>
-                        </Link>
+                        
                         <div className="postcntud">
                             <h3>Destination : {event.location} </h3>
                             <h3>Date departure : {event.date}</h3>

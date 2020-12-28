@@ -52,8 +52,15 @@ export default class CreatePost extends Component {
                     </div>
                 </nav>
                 <div className="postcnt">
-                    <input type="text" placeholder="enter image URL link" onChange={(e)=>{this.setState({image:e.target.value})}}/>
-                    <textarea name="textPost" onChange={(e)=>{this.setState({textDsc:e.target.value})}}></textarea>
+                    <hr></hr>
+                    <hr></hr>
+                    <hr></hr>
+                    enter image link: <input  className="postcntinput" type="text" placeholder="enter image URL link" onChange={(e)=>{this.setState({image:e.target.value})}}/>
+                    <hr></hr>
+                    tell your story:
+                    <textarea name="textPost" cols="50" rows="5" onChange={(e)=>{this.setState({textDsc:e.target.value})}}></textarea>
+                    <hr></hr>
+                    <hr></hr>
                     <button onClick={this.createpost.bind(this)}>Submit</button>
                 </div>
             </div>
