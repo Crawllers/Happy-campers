@@ -66,7 +66,7 @@
 
 /* logo component */
 .logo{
-  width: 260%;
+  width: 220%;
   height: 7vh;
   margin-left: 2.4rem;
 }
@@ -83,7 +83,7 @@
   width: 55%;
   background-color: transparent;
   margin: auto;
-  margin-top:12rem;
+  margin-top: 12rem;
   padding: 1.8rem 0;
   display: flex;
   flex-direction: column;
@@ -110,14 +110,6 @@
   border: #fff 4px solid;
   color: #fff;
   font-weight: 700;
-}
-.postcnt{
-  width: 90%;
-  height: auto;
-  margin: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  padding-bottom: 1rem;
 }
 
 .postcnt img{
@@ -173,7 +165,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background:rgba(255,255,255, 0.7);
+  border-radius: 12px;
 }
 
 .postcntinput{
