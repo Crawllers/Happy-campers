@@ -56,12 +56,26 @@ export default class CreateEvent extends Component {
                     </div>
                 </nav>
                 <div className="postcnt">
-                    <input type="text" name="titleEvent" placeholder="Event Title" onChange={(e)=>{this.setState({title:e.target.value})}}/>
-                    <input type="text" name="locationEvent" placeholder="Enter the location" onChange={(e)=>{this.setState({location:e.target.value})}}/>
-                    <input type="text" name="telnum" placeholder="Enter phone number" onChange={(e)=>{this.setState({telnum:e.target.value})}}/>
-                    <input type="date" name="dateEvent" placeholder="enter image URL link" onChange={(e)=>{this.setState({date:e.target.value})}}/>
-                    <input type="text" name="imageUrlEvent" placeholder="enter image URL link" onChange={(e)=>{this.setState({image:e.target.value})}}/>
-                    <textarea name="textEvent" onChange={(e)=>{this.setState({text:e.target.value})}}></textarea>
+                <hr></hr>
+                <hr></hr>
+                <hr></hr>
+                Event title: 
+                    <input className="postcntinput" type="text" name="titleEvent" placeholder="Event Title" onChange={(e)=>{this.setState({title:e.target.value})}}/>
+                    <hr></hr>
+                Event location
+                    <input className="postcntinput" type="text" name="locationEvent" placeholder="Enter the location" onChange={(e)=>{this.setState({location:e.target.value})}}/>
+                    <hr></hr>
+                Organiser phone number:
+                    <input className="postcntinput" type="text" name="telnum" placeholder="Enter phone number" onChange={(e)=>{this.setState({telnum:e.target.value})}}/>
+                    <hr></hr>
+                Event departure Date:
+                    <input className="postcntinput" type="date" name="dateEvent" placeholder="enter image URL link" onChange={(e)=>{this.setState({date:e.target.value})}}/>
+                    <hr></hr>
+                Image Url:
+                    <input className="postcntinput" type="text" name="imageUrlEvent" placeholder="enter image URL link" onChange={(e)=>{this.setState({image:e.target.value})}}/>
+                    <hr></hr>
+                Make us heed your call for adventure !
+                    <textarea name="textEvent" cols="50" rows="5" onChange={(e)=>{this.setState({text:e.target.value})}}></textarea>
                     <button onClick={this.createEvent.bind(this)}>Submit</button>
                 </div>
             </div>

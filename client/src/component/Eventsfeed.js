@@ -42,12 +42,16 @@ export default class Eventsfeed extends Component {
     render() {
         console.log(this.state.joinlist)
         const {events} = this.props
+        let buffer;
+        if(events){
+            buffer = events.reverse();
+        }
         return (
             <div>
-                {events ? events.map((event, index)=>(
+                {buffer ? buffer.map((event, index)=>(
                     <div className="postcnt" key={index}>
                         <div className="postcntud">
-                            <h3> {event.title} </h3>
+                            <h2> {event.title} </h2>
                         </div>
                         <div className="postcntud">
                             <h3>Destination : {event.location}</h3>

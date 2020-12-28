@@ -27,7 +27,7 @@ export default class Feeds extends Component {
       }
     
     render() {
-        console.log('feeds events props :',this.props.events)
+        // console.log('feeds events props :',this.props.events)
         return (
             <div>
                 <nav className="navigation nav_fix">
