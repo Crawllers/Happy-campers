@@ -1,6 +1,8 @@
+
 /* navigation bar */
+
 .navigation{
-  background-color: #7AAAE1;
+  background-color: #79BCE0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +81,7 @@
 
 .feedscontainer{
   width: 55%;
-  background-color: #F3F2F2;
+  background-color: transparent;
   margin: auto;
   margin-top:12rem;
   padding: 1.8rem 0;
@@ -104,7 +106,7 @@
 }
 
 .selected{
-  background-color:  #7AAAE1;
+  background-color:  #79BCE0;
   border: #fff 4px solid;
   color: #fff;
   font-weight: 700;
@@ -158,7 +160,7 @@
 
 .postcntud{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 /* post  */
@@ -169,9 +171,13 @@
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #F3F2F2;
+  background-color: transparent;
+}
+
+.postcntinput{
+  width: 370px;
 }
 
 /*My posts BTN*/
@@ -214,4 +220,35 @@
   display: flex;
   justify-content:center;
   align-items:center
+}
+
+/*sigup login*/
+
+.mainloginput{
+  width: 40%;
+  height: 40vh;
+  background-color: #E1EBF5;
+  border-radius: 3px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.interlogs{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.interlogs input{
+  height: 12px;
+}
+
+.btnlog{
+  width: 10rem;
 }

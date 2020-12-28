@@ -18,7 +18,7 @@ class Login extends Component {
        }
     }
     
-
+//axios call to the database to check the login data
 async login(){
     await axios.post('/login', {
         email : this.state.email,
@@ -48,10 +48,19 @@ async login(){
                   </Link>
               </div>
       </nav>
-    <div>
-      email:<input type='text'  onChange={(e)=>{this.setState({email:e.target.value})}}/>
-      password:<input type='password'  onChange={(e)=>{this.setState({password:e.target.value})}}/>
-      <button onClick={this.login.bind(this)}>Submit</button>
+    <div className="mainloginput">
+      <h1>Login</h1>
+      <div className="interlogs">
+      email: <input type='text'  onChange={(e)=>{this.setState({email:e.target.value})}}/>
+      </div>
+      <hr></hr>
+      <div className="interlogs">
+      password: <input type='password'  onChange={(e)=>{this.setState({password:e.target.value})}}/>
+      </div>
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <button className="joinbtn btnlog" onClick={this.login.bind(this)}>Submit</button>
     </div>
     </div>
   );

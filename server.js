@@ -28,11 +28,9 @@ User.create({ // create user
     password: password,
     isadmin: false
 })
-res.redirect('/')
 })
 
 app.post('/login', async (req, res) => {
-    console.log('-----------------------------------------');
     let compare='';
     await User.findOne({email: req.body.email}, (err, data) =>{
         if(data){

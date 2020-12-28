@@ -44,11 +44,23 @@ async signup(){
                     </Link>
                 </div>
                 </nav>
-                <div>
+                <div className="mainloginput">
+                <h1>Signup</h1>
+                <div className="interlogs">
                 username: <input type='text' onChange={(e)=>{this.setState({username:e.target.value})}}/>
+                </div>
+                <hr></hr>
+                <div className="interlogs">
                 email: <input type='text'  onChange={(e)=>{this.setState({email:e.target.value})}}/>
+                </div>
+                <hr></hr>
+                <div className="interlogs">
                 password: <input type='password'  onChange={(e)=>{this.setState({password:e.target.value})}}/>
-                <button onClick={this.signup.bind(this)}>submit</button>
+                </div>
+                <hr></hr>
+                <hr></hr>
+                <hr></hr>
+                <button className="joinbtn btnlog" onClick={this.signup.bind(this)}>submit</button>
                 </div>
     </div>
   );

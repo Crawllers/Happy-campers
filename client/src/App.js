@@ -7,7 +7,6 @@ import Landing from './component/Landing.js'
 import Feeds from './component/Feeds.js'
 import CreateEvent from './component/CreateEvent.js'
 import CreatePost from './component/CreatePost.js'
-import Post from './component/Post.js'
 import {
   BrowserRouter as Router,
   Switch,
