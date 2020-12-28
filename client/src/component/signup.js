@@ -19,8 +19,8 @@ class Signup extends Component {
        }
 }
     
-async signup(){
-  await axios.post('/sign',{
+signup(){
+  axios.post('/sign',{
     username:this.state.username,
     email:this.state.email,
     password:this.state.password
